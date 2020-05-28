@@ -4,7 +4,8 @@
 In this project we are going to work with time series in order to predict the future property values for the top 5 zipcodes of San Jose Metro area in California based on the price of previous years.
 
 
-# Project breakdown:
+
+## Project breakdown:
 
 1. Importing necessary libraries and load the dataset.
 
@@ -24,7 +25,7 @@ In this project we are going to work with time series in order to predict the fu
 
 
 
-# Initial Data and zipcode based time series:
+## Initial data and zipcode based time series:
 
 * Initial wide format dataset:
 
@@ -36,8 +37,7 @@ In this project we are going to work with time series in order to predict the fu
 ![alt text](https://github.com/FarnazG/project004/blob/master/images/san-jose-metro-df.png)
 
 
-
-### The general trend of property values for different cities in San Jose metro area:
+* The general trend of property values for different cities in San Jose metro area:
 
 ![alt text](https://github.com/FarnazG/project004/blob/master/images/general-trend-property-value.png)
 
@@ -48,7 +48,7 @@ In this project we are going to work with time series in order to predict the fu
 
 
 
-### Time series stationarity:
+## Time series stationarity:
 
 * Visualizing Autocorrelation and Partial-Autocollerlation plots of time series
 
@@ -58,34 +58,34 @@ In this project we are going to work with time series in order to predict the fu
 
 
 
-# The ARIMA model initial result:
+## The ARIMA model initial result:
 
 * In-sample predictions for test data:
 
 ![alt text](https://github.com/FarnazG/project004/blob/master/images/in-sample-predictions.png)
 
-
 * Out_of_sample predictions for future years, from 2018 to 2020: 
 
-![alt text](https://github.com/FarnazG/project004/blob/master/images/out-of-sample-predictions.png)
+![alt text](https://github.com/FarnazG/project004/blob/master/images/out-of-sample_predictions.png)
 
 
 
-### Model validation using residuals and density plots:
+## Model validation using residuals and density plots:
 
 ![alt text](https://github.com/FarnazG/project004/blob/master/images/model-validation.png)
 
 
 
+
 # Interpreting Results:
 
-### Finding best zipcodes within san jose metro area:
+## Finding best zipcodes within san jose metro area:
 
 The prices arepredicted for the next 2 years of our data set, from 2018 to 2020.To find the 5 top most growing zipcodes:
 
 Calculate the percentage of profit made from the investment within 4 years from 2016 to 2020:
 
-profit = (Predicted property value on 2020 � investment value on 2016)/investment value on 2016
+profit = (Predicted property value on 2020 - investment value on 2016)/investment value on 2016
 
 ![alt text](https://github.com/FarnazG/dsc-mod-4-project-v2-1-online-ds-ft-120919/blob/master/images/Five_top_zipcode.png)
 
@@ -101,7 +101,7 @@ profit = (Predicted property value on 2020 � investment value on 2016)/investm
 
 
 
-### Future Work and Recommendations:
+## Future Work and Recommendations:
 
 1. Based on the data provided by zillow dataset, The generated ARIMA model is capable of predicting the average property value and its changes for any given period of time using the trends of previous years from 1996 to 2018.
 
